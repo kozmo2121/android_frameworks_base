@@ -432,7 +432,7 @@
          This mechanism allows the host to remain in suspend state and the dongle to actively
          scan and wake the host when a configured SSID is detected by the dongle. This chipset
          capability can provide power savings when wifi needs to be always kept on. -->
-    <bool translatable="false" name="config_wifi_background_scan_support">false</bool>
+    <bool translatable="false" name="config_wifi_background_scan_support">true</bool>
     <bool translatable="false" name="wifi_autocon">true</bool>
 
     <!-- Boolean indicating we re-try re-associating once upon disconnection and RSSI is high failure  -->
@@ -1209,7 +1209,7 @@
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <integer name="config_screenBrightnessDim">10</integer>
+    <integer name="config_screenBrightnessDim">20</integer>
 
     <!-- Minimum allowable screen brightness to use in a very dark room.
          This value sets the floor for the darkest possible auto-brightness
@@ -1324,7 +1324,7 @@
 
     <integer name="config_buttonBrightnessSettingDefault">255</integer>
     <integer name="config_keyboardBrightnessSettingDefault">0</integer>
-    <bool name="config_deviceHasVariableButtonBrightness">false</bool>
+    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
 
     <!-- Amount of time it takes for the light sensor to warm up in milliseconds.
          For this time after the screen turns on, the Power Manager
@@ -1925,7 +1925,7 @@
          This value may be zero in which case the screen will not dim before the
          device goes to sleep.
     -->
-    <integer name="config_maximumScreenDimDuration">7000</integer>
+    <integer name="config_maximumScreenDimDuration">15000</integer>
 
     <!-- User activity timeout: Maximum screen dim duration as a percentage of screen off timeout.
 
@@ -1941,7 +1941,7 @@
          This value must be between 0% and 100%.  If the value is zero, the screen will not
          dim before the device goes to sleep.
     -->
-    <fraction name="config_maximumScreenDimRatio">20%</fraction>
+    <fraction name="config_maximumScreenDimRatio">40%</fraction>
 
     <!-- Base "touch slop" value used by ViewConfiguration as a
          movement threshold where scrolling should begin. -->
