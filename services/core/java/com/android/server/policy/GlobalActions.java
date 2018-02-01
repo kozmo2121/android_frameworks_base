@@ -31,6 +31,8 @@ import com.android.internal.widget.LockPatternUtils;
 import android.app.ActivityManager;
 import android.app.ActivityManagerNative;
 import android.app.Dialog;
+import android.app.IThemeCallback;
+import android.app.ThemeManager;
 import android.app.INotificationManager;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
